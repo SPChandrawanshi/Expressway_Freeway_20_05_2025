@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Scan } from 'lucide-react'; const AIDetectionCR = () => <UniversalDashboard title='AI-Powered Threat & Object Detection' subtitle='National Control Command Center' icon={Scan} />; export default AIDetectionCR;

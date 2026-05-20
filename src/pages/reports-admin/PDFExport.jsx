@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { FileDown } from 'lucide-react'; const PDFExport = () => <UniversalDashboard title='High-Security PDF Report Generation Center' subtitle='National Intelligence & Reporting Center' icon={FileDown} />; export default PDFExport;

@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Clock } from 'lucide-react'; const PendingPayments = () => <UniversalDashboard title='Outstanding & Pending Fine Payments' subtitle='National Judiciary Command Center' icon={Clock} />; export default PendingPayments;

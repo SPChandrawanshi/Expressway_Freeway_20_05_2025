@@ -1,0 +1,173 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  body {
+    @apply bg-[#f8fafc] text-slate-900 font-inter antialiased;
+    margin: 0;
+    min-height: 100vh;
+  }
+}
+
+@layer utilities {
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slide-in-from-bottom-4 {
+    from { transform: translateY(1rem); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  @keyframes slide-in-from-bottom-6 {
+    from { transform: translateY(1.5rem); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  @keyframes fade-in-slide-up-6 {
+    from { opacity: 0; transform: translateY(1.5rem); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes slide-in-from-right-4 {
+    from { transform: translateX(1rem); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+
+  .animate-in {
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .fade-in {
+    animation-name: fade-in;
+  }
+
+  .slide-in-from-bottom-4 {
+    animation-name: slide-in-from-bottom-4;
+  }
+
+  .slide-in-from-bottom-6 {
+    animation-name: slide-in-from-bottom-6;
+  }
+
+  .slide-in-from-right-4 {
+    animation-name: slide-in-from-right-4;
+  }
+}
+
+@layer components {
+  /* Ultra-Premium Card System */
+  .enterprise-card {
+    @apply bg-white rounded-[40px] p-8 transition-all duration-500;
+    animation: fade-in-slide-up-6 0.5s cubic-bezier(0.4, 0, 0.2, 1) both;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .enterprise-card:hover {
+    @apply -translate-y-3 scale-[1.01];
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 50px -12px;
+    border: 2px solid #6D214F;
+  }
+
+  /* Universal Button System */
+  .btn-premium {
+    @apply px-6 py-3 rounded-2xl font-black uppercase tracking-widest text-[10px] transition-all duration-300 flex items-center justify-center gap-3 relative overflow-hidden;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px;
+  }
+
+  .btn-premium:hover {
+    @apply -translate-y-1 shadow-2xl;
+    border: 2px solid #6D214F;
+    background: #6D214F;
+    color: white;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 rounded-2xl font-black uppercase tracking-widest text-[10px] transition-all duration-300 bg-white text-slate-700 border border-slate-200;
+  }
+
+  .btn-secondary:hover {
+    @apply -translate-y-1;
+    border: 2px solid #6D214F;
+    color: #6D214F;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 20px;
+  }
+
+  /* Master Shadow & Border Rules */
+  .shadow-master {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .shadow-master:hover {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 20px 40px -10px;
+    transform: translateY(-5px);
+    border: 2px solid #6D214F !important;
+  }
+  
+  .border-master {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  /* Logo Animation */
+  .logo-container {
+    @apply relative flex items-center justify-center transition-all duration-700;
+  }
+
+  .logo-container:hover {
+    @apply scale-110 rotate-[360deg];
+    filter: drop-shadow(0 0 15px rgba(109, 33, 79, 0.4));
+  }
+
+  /* Premium Hover Animations */
+  .hover-lift {
+    @apply transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl;
+  }
+
+  .hover-glow:hover {
+    box-shadow: 0 0 30px rgba(109, 33, 79, 0.3);
+  }
+
+  /* Global Hover Border Catch-all */
+  div[class*="rounded-"][class*="shadow"]:hover,
+  button[class*="rounded-"]:hover,
+  section[class*="rounded-"]:hover {
+    border-color: #6D214F !important;
+    border-width: 2px !important;
+  }
+
+  /* Specific overrides for buttons to maintain high contrast */
+  button.btn-premium:hover {
+    border-color: white !important;
+    box-shadow: 0 0 20px rgba(109, 33, 79, 0.5);
+  }
+
+  .btn-enterprise {
+    @apply px-6 py-3 rounded-xl font-bold transition-all duration-300 flex items-center justify-center gap-3;
+  }
+
+  .btn-enterprise:hover {
+    @apply scale-105 -translate-y-0.5;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-50;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-200 rounded-full hover:bg-slate-300;
+}

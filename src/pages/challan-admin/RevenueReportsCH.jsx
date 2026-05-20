@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { BarChart3 } from 'lucide-react'; const RevenueReportsCH = () => <UniversalDashboard title='Judiciary Revenue & Collection Stats' subtitle='National Judiciary Command Center' icon={BarChart3} />; export default RevenueReportsCH;

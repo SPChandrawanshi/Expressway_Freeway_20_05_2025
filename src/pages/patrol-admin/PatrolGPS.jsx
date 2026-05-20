@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Locate } from 'lucide-react'; const PatrolGPS = () => <UniversalDashboard title='Live Patrol Vehicle GPS Monitoring' subtitle='National Patrol Command Center' icon={Locate} />; export default PatrolGPS;

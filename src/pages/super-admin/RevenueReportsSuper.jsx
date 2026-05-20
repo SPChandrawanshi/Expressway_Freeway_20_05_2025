@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { DollarSign } from 'lucide-react'; const RevenueReportsSuper = () => <UniversalDashboard title='Revenue Reports' subtitle='National Super Admin Command' icon={DollarSign} />; export default RevenueReportsSuper;

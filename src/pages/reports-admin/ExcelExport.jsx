@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { FileSpreadsheet } from 'lucide-react'; const ExcelExport = () => <UniversalDashboard title='Bulk Excel Data Export & Audit Logs' subtitle='National Intelligence & Reporting Center' icon={FileSpreadsheet} />; export default ExcelExport;

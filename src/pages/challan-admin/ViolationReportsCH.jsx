@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { FileText } from 'lucide-react'; const ViolationReportsCH = () => <UniversalDashboard title='Consolidated Traffic Violation Reports' subtitle='National Judiciary Command Center' icon={FileText} />; export default ViolationReportsCH;

@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Navigation } from 'lucide-react'; const TrafficRerouting = () => <UniversalDashboard title='National Traffic Rerouting Command' subtitle='National Route Control Center' icon={Navigation} />; export default TrafficRerouting;

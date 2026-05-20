@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { PhoneCall } from 'lucide-react'; const PublicEmergency = () => <UniversalDashboard title='National Highway Emergency Contact Center' subtitle='Citizen Service Portal' icon={PhoneCall} />; export default PublicEmergency;

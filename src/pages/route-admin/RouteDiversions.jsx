@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { MapPin } from 'lucide-react'; const RouteDiversions = () => <UniversalDashboard title='Active Route Diversion & Tracking' subtitle='National Route Control Center' icon={MapPin} />; export default RouteDiversions;

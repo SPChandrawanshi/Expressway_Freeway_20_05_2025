@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Camera } from 'lucide-react'; const CCTVMonsSuper = () => <UniversalDashboard title='CCTV Monitoring' subtitle='National Super Admin Command' icon={Camera} />; export default CCTVMonsSuper;

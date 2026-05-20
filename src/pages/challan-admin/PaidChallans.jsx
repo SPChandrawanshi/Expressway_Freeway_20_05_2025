@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Receipt } from 'lucide-react'; const PaidChallans = () => <UniversalDashboard title='Verified & Cleared Fine Payments' subtitle='National Judiciary Command Center' icon={Receipt} />; export default PaidChallans;

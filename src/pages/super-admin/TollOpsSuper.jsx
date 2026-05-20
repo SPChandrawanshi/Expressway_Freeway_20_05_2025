@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Building2 } from 'lucide-react'; const TollOpsSuper = () => <UniversalDashboard title='Toll Operations' subtitle='National Super Admin Command' icon={Building2} />; export default TollOpsSuper;

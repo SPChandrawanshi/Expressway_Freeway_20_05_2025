@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Lock } from 'lucide-react'; const RolesPermissionsSuper = () => <UniversalDashboard title='Roles & Permissions' subtitle='National Super Admin Command' icon={Lock} />; export default RolesPermissionsSuper;

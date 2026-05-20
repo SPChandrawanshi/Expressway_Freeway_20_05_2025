@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { FileText } from 'lucide-react'; const RouteReports = () => <UniversalDashboard title='Consolidated Route Efficiency Logs' subtitle='National Route Control Center' icon={FileText} />; export default RouteReports;

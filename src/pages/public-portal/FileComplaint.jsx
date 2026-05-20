@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { MessageSquare } from 'lucide-react'; const FileComplaint = () => <UniversalDashboard title='Official Citizen Complaint Submission' subtitle='Citizen Service Portal' icon={MessageSquare} />; export default FileComplaint;

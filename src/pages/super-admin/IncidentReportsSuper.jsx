@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { AlertCircle } from 'lucide-react'; const IncidentReportsSuper = () => <UniversalDashboard title='Incident Reports' subtitle='National Super Admin Command' icon={AlertCircle} />; export default IncidentReportsSuper;

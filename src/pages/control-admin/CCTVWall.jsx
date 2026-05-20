@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Tv } from 'lucide-react'; const CCTVWall = () => <UniversalDashboard title='National Control Room CCTV Video Wall' subtitle='National Control Command Center' icon={Tv} />; export default CCTVWall;

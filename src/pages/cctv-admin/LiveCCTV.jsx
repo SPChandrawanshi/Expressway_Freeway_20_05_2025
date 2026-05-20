@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Camera } from 'lucide-react'; const LiveCCTV = () => <UniversalDashboard title='Live Highway CCTV Feed Center' subtitle='National CCTV Command Center' icon={Camera} />; export default LiveCCTV;

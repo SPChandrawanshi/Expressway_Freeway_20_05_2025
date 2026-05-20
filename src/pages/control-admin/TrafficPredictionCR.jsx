@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { TrendingUp } from 'lucide-react'; const TrafficPredictionCR = () => <UniversalDashboard title='AI Traffic Flow & Congestion Prediction' subtitle='National Control Command Center' icon={TrendingUp} />; export default TrafficPredictionCR;

@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Lock } from 'lucide-react'; const StaffRoles = () => <UniversalDashboard title='RBAC Role & Permission Management' subtitle='Staff & HR Command Center' icon={Lock} />; export default StaffRoles;

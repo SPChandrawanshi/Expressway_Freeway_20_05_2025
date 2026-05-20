@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Zap } from 'lucide-react'; const LaneStatus = () => <UniversalDashboard title='Live Highway Lane Status Monitoring' subtitle='National Route Control Center' icon={Zap} />; export default LaneStatus;

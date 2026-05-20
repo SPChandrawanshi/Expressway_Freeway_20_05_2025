@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { UserCheck } from 'lucide-react'; const DriverReports = () => <UniversalDashboard title='Driver Performance & Fuel Efficiency' subtitle='National Patrol Command Center' icon={UserCheck} />; export default DriverReports;

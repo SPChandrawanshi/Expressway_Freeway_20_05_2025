@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Map } from 'lucide-react'; const LiveHighwayMap = () => <UniversalDashboard title='Interactive National Highway GIS Map' subtitle='National Control Command Center' icon={Map} />; export default LiveHighwayMap;

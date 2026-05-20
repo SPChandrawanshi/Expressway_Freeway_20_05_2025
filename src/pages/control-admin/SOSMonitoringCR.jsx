@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Siren } from 'lucide-react'; const SOSMonitoringCR = () => <UniversalDashboard title='Real-time National SOS & Distress Monitoring' subtitle='National Control Command Center' icon={Siren} />; export default SOSMonitoringCR;

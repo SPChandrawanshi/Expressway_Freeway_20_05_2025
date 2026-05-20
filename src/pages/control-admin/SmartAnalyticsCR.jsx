@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { PieChart } from 'lucide-react'; const SmartAnalyticsCR = () => <UniversalDashboard title='Advanced Control Room Performance Analytics' subtitle='National Control Command Center' icon={PieChart} />; export default SmartAnalyticsCR;

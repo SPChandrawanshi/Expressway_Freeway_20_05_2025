@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { DollarSign } from 'lucide-react'; const RevenueReportsRA = () => <UniversalDashboard title='Official Government Revenue Audit Reports' subtitle='National Intelligence & Reporting Center' icon={DollarSign} />; export default RevenueReportsRA;

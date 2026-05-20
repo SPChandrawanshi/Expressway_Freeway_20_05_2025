@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { ShieldAlert } from 'lucide-react'; const BlacklistedVehiclesCH = () => <UniversalDashboard title='National Blacklisted Vehicle Database' subtitle='National Judiciary Command Center' icon={ShieldAlert} />; export default BlacklistedVehiclesCH;

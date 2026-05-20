@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { BarChart3 } from 'lucide-react'; const FuelConsumption = () => <UniversalDashboard title='Fleet Fuel Consumption Analytics' subtitle='National Patrol Command Center' icon={BarChart3} />; export default FuelConsumption;

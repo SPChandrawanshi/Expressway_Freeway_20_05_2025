@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Map } from 'lucide-react'; const HighwayStatusSuper = () => <UniversalDashboard title='Live Highway Status' subtitle='National Super Admin Command' icon={Map} />; export default HighwayStatusSuper;

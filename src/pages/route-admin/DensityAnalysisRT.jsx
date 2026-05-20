@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { PieChart } from 'lucide-react'; const DensityAnalysisRT = () => <UniversalDashboard title='Lane-wise Traffic Density Analytics' subtitle='National Route Control Center' icon={PieChart} />; export default DensityAnalysisRT;

@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Navigation } from 'lucide-react'; const RouteMonsSuper = () => <UniversalDashboard title='Route Monitoring' subtitle='National Super Admin Command' icon={Navigation} />; export default RouteMonsSuper;

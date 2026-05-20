@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { ActivityIcon } from 'lucide-react'; const MotionDetection = () => <UniversalDashboard title='AI-Powered Motion Detection Tracking' subtitle='National CCTV Command Center' icon={ActivityIcon} />; export default MotionDetection;

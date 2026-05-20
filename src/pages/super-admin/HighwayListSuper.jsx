@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { List } from 'lucide-react'; const HighwayListSuper = () => <UniversalDashboard title='Highway List' subtitle='National Super Admin Command' icon={List} />; export default HighwayListSuper;

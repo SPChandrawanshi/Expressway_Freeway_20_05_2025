@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Siren } from 'lucide-react'; const EmergencyReportsSuper = () => <UniversalDashboard title='Emergency Reports' subtitle='National Super Admin Command' icon={Siren} />; export default EmergencyReportsSuper;

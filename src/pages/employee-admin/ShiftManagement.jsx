@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Clock } from 'lucide-react'; const ShiftManagement = () => <UniversalDashboard title='Personnel Shift Scheduling & Rotation' subtitle='Staff & HR Command Center' icon={Clock} />; export default ShiftManagement;

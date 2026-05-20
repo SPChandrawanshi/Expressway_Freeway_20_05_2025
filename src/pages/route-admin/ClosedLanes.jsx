@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { AlertOctagon } from 'lucide-react'; const ClosedLanes = () => <UniversalDashboard title='National Closed & Under-Maintenance Lanes' subtitle='National Route Control Center' icon={AlertOctagon} />; export default ClosedLanes;

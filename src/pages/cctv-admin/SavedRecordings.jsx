@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Video } from 'lucide-react'; const SavedRecordings = () => <UniversalDashboard title='Archived High-Priority Recordings' subtitle='National CCTV Command Center' icon={Video} />; export default SavedRecordings;
