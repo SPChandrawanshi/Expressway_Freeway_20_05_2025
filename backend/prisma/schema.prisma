@@ -1,0 +1,216 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum Role {
+  SUPER_ADMIN
+  HIGHWAY_ADMIN
+  TOLL_MANAGER
+  CCTV_OPERATOR
+  TRAFFIC_OFFICER
+  PATROL_OFFICER
+  EMERGENCY_TEAM
+  FINANCE_OFFICER
+}
+
+enum TicketStatus {
+  OPEN
+  ASSIGNED
+  IN_PROGRESS
+  RESOLVED
+  CLOSED
+}
+
+enum VehicleType {
+  CAR
+  LCV
+  BUS
+  TRUCK
+  MULTI_AXLE
+}
+
+enum TransactionStatus {
+  SUCCESS
+  FAILED
+  PENDING
+  BLACKLISTED
+}
+
+model User {
+  id            String       @id @default(uuid())
+  employeeId    String       @unique
+  name          String
+  email         String       @unique
+  password      String
+  role          Role         @default(PATROL_OFFICER)
+  isActive      Boolean      @default(true)
+  phoneNumber   String?
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+  
+  // Relations
+  activityLogs  ActivityLog[]
+  dispatchedTo  EmergencyRequest[] @relation("DispatcherRelation")
+  assignedTasks EmergencyRequest[] @relation("ResponderRelation")
+}
+
+model ActivityLog {
+  id        String   @id @default(uuid())
+  userId    String
+  action    String
+  details   String?
+  ipAddress String?
+  createdAt DateTime @default(now())
+  
+  // Relations
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model TollBooth {
+  id           String            @id @default(uuid())
+  name         String
+  highwayId    String
+  location     String
+  isActive     Boolean           @default(true)
+  createdAt    DateTime          @default(now())
+  updatedAt    DateTime          @updatedAt
+  
+  // Relations
+  transactions TollTransaction[]
+}
+
+model TollTransaction {
+  id            String            @id @default(uuid())
+  tollBoothId   String
+  fastagId      String?
+  vehicleNumber String
+  vehicleType   VehicleType
+  amount        Float
+  status        TransactionStatus @default(PENDING)
+  failureReason String?
+  createdAt     DateTime          @default(now())
+  
+  // Relations
+  tollBooth     TollBooth         @relation(fields: [tollBoothId], references: [id])
+  fastagVehicle FASTagVehicle?    @relation(fields: [fastagId], references: [id])
+}
+
+model FASTagVehicle {
+  id            String            @id @default(uuid())
+  tagId         String            @unique
+  vehicleNumber String            @unique
+  ownerName     String
+  balance       Float             @default(0.0)
+  isBlacklisted Boolean           @default(false)
+  blacklistMsg  String?
+  createdAt     DateTime          @default(now())
+  updatedAt     DateTime          @updatedAt
+  
+  // Relations
+  transactions  TollTransaction[]
+}
+
+model VehicleTracking {
+  id            String      @id @default(uuid())
+  vehicleNumber String
+  speed         Float
+  latitude      Float
+  longitude     Float
+  laneNumber    Int
+  capturedAt    DateTime    @default(now())
+  isOverspeed   Boolean     @default(false)
+  cameraIp      String?
+  
+  // Relations
+  challans      Challan[]
+}
+
+model Challan {
+  id                String          @id @default(uuid())
+  trackingId        String
+  vehicleNumber     String
+  fineAmount        Float
+  violationType     String
+  status            String          @default("PENDING") // PENDING, PAID, CANCELLED
+  evidenceUrl       String?
+  createdAt         DateTime        @default(now())
+  
+  // Relations
+  tracking          VehicleTracking @relation(fields: [trackingId], references: [id])
+}
+
+model Incident {
+  id             String             @id @default(uuid())
+  title          String
+  description    String
+  severity       String             // LOW, MEDIUM, HIGH, CRITICAL
+  location       String
+  latitude       Float
+  longitude      Float
+  status         TicketStatus       @default(OPEN)
+  reportedBy     String             // PUBLIC, CAMERA_AI, PATROL
+  createdAt      DateTime           @default(now())
+  updatedAt      DateTime           @updatedAt
+  
+  // Relations
+  emergencies    EmergencyRequest[]
+}
+
+model EmergencyRequest {
+  id            String       @id @default(uuid())
+  incidentId    String
+  dispatcherId  String
+  responderId   String?
+  responderType String       // AMBULANCE, POLICE, FIRE, PATROL
+  status        TicketStatus @default(ASSIGNED)
+  assignedAt    DateTime     @default(now())
+  resolvedAt    DateTime?
+  
+  // Relations
+  incident      Incident     @relation(fields: [incidentId], references: [id])
+  dispatcher    User         @relation("DispatcherRelation", fields: [dispatcherId], references: [id])
+  responder     User?        @relation("ResponderRelation", fields: [responderId], references: [id])
+}
+
+model CCTVCamera {
+  id         String   @id @default(uuid())
+  cameraName String
+  location   String
+  ipAddress  String   @unique
+  streamUrl  String
+  status     String   @default("ONLINE") // ONLINE, OFFLINE, MAINTENANCE
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+
+model PatrolVehicle {
+  id            String   @id @default(uuid())
+  vehiclePlate  String   @unique
+  vehicleType   String
+  driverName    String
+  status        String   @default("AVAILABLE") // AVAILABLE, DISPATCHED, MAINTENANCE
+  latitude      Float?
+  longitude     Float?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  
+  // Relations
+  fuelLogs      FuelLog[]
+}
+
+model FuelLog {
+  id              String        @id @default(uuid())
+  patrolVehicleId String
+  fuelAmount      Float
+  cost            Float
+  odometerReading Float
+  loggedAt        DateTime      @default(now())
+  
+  // Relations
+  vehicle         PatrolVehicle @relation(fields: [patrolVehicleId], references: [id])
+}
