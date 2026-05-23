@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { List } from 'lucide-react'; const PatrolLogs = () => <UniversalDashboard title='Official Daily Patrol Activity Logs' subtitle='National Patrol Command Center' icon={List} />; export default PatrolLogs;

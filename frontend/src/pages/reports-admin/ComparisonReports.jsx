@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Layers } from 'lucide-react'; const ComparisonReports = () => <UniversalDashboard title='Year-over-Year Comparative Analysis Reports' subtitle='National Intelligence & Reporting Center' icon={Layers} />; export default ComparisonReports;

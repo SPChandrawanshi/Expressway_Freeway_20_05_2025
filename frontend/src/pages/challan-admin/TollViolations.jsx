@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Building2 } from 'lucide-react'; const TollViolations = () => <UniversalDashboard title='E-Toll & FASTag Violation Records' subtitle='National Judiciary Command Center' icon={Building2} />; export default TollViolations;

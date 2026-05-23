@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { PlaySquare } from 'lucide-react'; const PlaybackCenter = () => <UniversalDashboard title='CCTV Historical Playback Center' subtitle='National CCTV Command Center' icon={PlaySquare} />; export default PlaybackCenter;

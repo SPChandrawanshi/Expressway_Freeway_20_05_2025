@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Wallet } from 'lucide-react'; const StaffPayroll = () => <UniversalDashboard title='Personnel Payroll & Financial Management' subtitle='Staff & HR Command Center' icon={Wallet} />; export default StaffPayroll;

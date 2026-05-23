@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Calculator } from 'lucide-react'; const TollCalculator = () => <UniversalDashboard title='Highway Journey Toll Estimator' subtitle='Citizen Service Portal' icon={Calculator} />; export default TollCalculator;

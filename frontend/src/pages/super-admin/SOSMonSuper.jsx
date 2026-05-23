@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Bell } from 'lucide-react'; const SOSMonSuper = () => <UniversalDashboard title='SOS Monitoring' subtitle='National Super Admin Command' icon={Bell} />; export default SOSMonSuper;

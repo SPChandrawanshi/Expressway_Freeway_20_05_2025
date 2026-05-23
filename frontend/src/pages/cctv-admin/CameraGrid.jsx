@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { LayoutGrid } from 'lucide-react'; const CameraGrid = () => <UniversalDashboard title='National Multi-Camera Grid View' subtitle='National CCTV Command Center' icon={LayoutGrid} />; export default CameraGrid;

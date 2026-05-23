@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Scan } from 'lucide-react'; const AIDetectSuper = () => <UniversalDashboard title='AI Detection' subtitle='National Super Admin Command' icon={Scan} />; export default AIDetectSuper;

@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Clock } from 'lucide-react'; const ComplaintStatus = () => <UniversalDashboard title='Track Active Complaint Resolution Status' subtitle='Citizen Service Portal' icon={Clock} />; export default ComplaintStatus;

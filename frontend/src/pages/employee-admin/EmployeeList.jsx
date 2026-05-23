@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Users } from 'lucide-react'; const EmployeeList = () => <UniversalDashboard title='National Highway Personnel Database' subtitle='Staff & HR Command Center' icon={Users} />; export default EmployeeList;

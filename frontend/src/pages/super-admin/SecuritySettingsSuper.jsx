@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { ShieldCheck } from 'lucide-react'; const SecuritySettingsSuper = () => <UniversalDashboard title='Security Settings' subtitle='National Super Admin Command' icon={ShieldCheck} />; export default SecuritySettingsSuper;

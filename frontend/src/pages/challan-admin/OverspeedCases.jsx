@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Gauge } from 'lucide-react'; const OverspeedCases = () => <UniversalDashboard title='AI-Detected Overspeed Violation Cases' subtitle='National Judiciary Command Center' icon={Gauge} />; export default OverspeedCases;

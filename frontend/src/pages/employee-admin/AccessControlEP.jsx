@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { ShieldCheck } from 'lucide-react'; const AccessControlEP = () => <UniversalDashboard title='Infrastructure Access & Security Control' subtitle='Staff & HR Command Center' icon={ShieldCheck} />; export default AccessControlEP;

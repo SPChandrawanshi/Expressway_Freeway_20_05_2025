@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { BarChart3 } from 'lucide-react'; const StateAnalyticsSuper = () => <UniversalDashboard title='State Analytics' subtitle='National Super Admin Command' icon={BarChart3} />; export default StateAnalyticsSuper;

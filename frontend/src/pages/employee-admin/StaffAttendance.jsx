@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Fingerprint } from 'lucide-react'; const StaffAttendance = () => <UniversalDashboard title='Biometric Staff Attendance & Logs' subtitle='Staff & HR Command Center' icon={Fingerprint} />; export default StaffAttendance;

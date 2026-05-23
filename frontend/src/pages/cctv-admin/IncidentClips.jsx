@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { AlertCircle } from 'lucide-react'; const IncidentClips = () => <UniversalDashboard title='Flagged Incident Video Clips' subtitle='National CCTV Command Center' icon={AlertCircle} />; export default IncidentClips;

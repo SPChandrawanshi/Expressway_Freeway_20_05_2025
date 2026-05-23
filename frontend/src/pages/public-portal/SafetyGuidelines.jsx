@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { ShieldCheck } from 'lucide-react'; const SafetyGuidelines = () => <UniversalDashboard title='Highway Travel Safety & Guidelines' subtitle='Citizen Service Portal' icon={ShieldCheck} />; export default SafetyGuidelines;

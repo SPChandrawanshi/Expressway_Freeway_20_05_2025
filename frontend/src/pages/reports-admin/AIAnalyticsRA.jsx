@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Cpu } from 'lucide-react'; const AIAnalyticsRA = () => <UniversalDashboard title='AI-Powered Predictive Intelligence Analytics' subtitle='National Intelligence & Reporting Center' icon={Cpu} />; export default AIAnalyticsRA;

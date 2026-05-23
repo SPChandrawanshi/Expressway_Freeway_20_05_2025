@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Gavel } from 'lucide-react'; const FineRecords = () => <UniversalDashboard title='Official Fine Issuance & History' subtitle='National Judiciary Command Center' icon={Gavel} />; export default FineRecords;

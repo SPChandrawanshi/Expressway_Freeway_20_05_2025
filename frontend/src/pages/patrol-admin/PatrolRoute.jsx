@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Navigation } from 'lucide-react'; const PatrolRoute = () => <UniversalDashboard title='Historical Patrol Route Tracking' subtitle='National Patrol Command Center' icon={Navigation} />; export default PatrolRoute;

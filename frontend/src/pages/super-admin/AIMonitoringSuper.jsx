@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Cpu } from 'lucide-react'; const AIMonitoringSuper = () => <UniversalDashboard title='AI Monitoring' subtitle='National Super Admin Command' icon={Cpu} />; export default AIMonitoringSuper;

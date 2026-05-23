@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Flame } from 'lucide-react'; const CongestionZones = () => <UniversalDashboard title='Live Congestion & Traffic Bottlenecks' subtitle='National Route Control Center' icon={Flame} />; export default CongestionZones;

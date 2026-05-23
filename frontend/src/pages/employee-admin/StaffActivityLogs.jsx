@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { History } from 'lucide-react'; const StaffActivityLogs = () => <UniversalDashboard title='Personnel System Activity & Audit Logs' subtitle='Staff & HR Command Center' icon={History} />; export default StaffActivityLogs;

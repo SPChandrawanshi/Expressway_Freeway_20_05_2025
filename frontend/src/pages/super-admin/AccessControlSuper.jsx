@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { ShieldCheck } from 'lucide-react'; const AccessControlSuper = () => <UniversalDashboard title='Access Control' subtitle='National Super Admin Command' icon={ShieldCheck} />; export default AccessControlSuper;

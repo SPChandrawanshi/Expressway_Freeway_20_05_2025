@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Activity } from 'lucide-react'; const TrafficIntelligence = () => <UniversalDashboard title='AI-Powered National Traffic Intelligence' subtitle='National Control Command Center' icon={Activity} />; export default TrafficIntelligence;

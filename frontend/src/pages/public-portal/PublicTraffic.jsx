@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Activity } from 'lucide-react'; const PublicTraffic = () => <UniversalDashboard title='Live Public Traffic & Congestion Updates' subtitle='Citizen Service Portal' icon={Activity} />; export default PublicTraffic;

@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { TrendingUp } from 'lucide-react'; const StaffPerformance = () => <UniversalDashboard title='Personnel KPI & Performance Analytics' subtitle='Staff & HR Command Center' icon={TrendingUp} />; export default StaffPerformance;

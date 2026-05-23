@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Settings } from 'lucide-react'; const SystemConfigSuper = () => <UniversalDashboard title='System Config' subtitle='National Super Admin Command' icon={Settings} />; export default SystemConfigSuper;

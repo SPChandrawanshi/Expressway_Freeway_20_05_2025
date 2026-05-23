@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Bell } from 'lucide-react'; const NationalAlerts = () => <UniversalDashboard title='Active National Highway Emergency Alerts' subtitle='National Control Command Center' icon={Bell} />; export default NationalAlerts;

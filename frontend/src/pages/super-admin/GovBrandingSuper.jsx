@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Palette } from 'lucide-react'; const GovBrandingSuper = () => <UniversalDashboard title='Gov Branding' subtitle='National Super Admin Command' icon={Palette} />; export default GovBrandingSuper;

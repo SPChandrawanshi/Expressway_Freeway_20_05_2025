@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { BarChart3 } from 'lucide-react'; const SurveillanceAnalytics = () => <UniversalDashboard title='AI Surveillance & Object Detection Analytics' subtitle='National CCTV Command Center' icon={BarChart3} />; export default SurveillanceAnalytics;

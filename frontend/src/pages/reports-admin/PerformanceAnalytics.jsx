@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { TrendingUp } from 'lucide-react'; const PerformanceAnalytics = () => <UniversalDashboard title='System & Infrastructure Performance Analytics' subtitle='National Intelligence & Reporting Center' icon={TrendingUp} />; export default PerformanceAnalytics;

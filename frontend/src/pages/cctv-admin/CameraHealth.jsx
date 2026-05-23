@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { ShieldCheck } from 'lucide-react'; const CameraHealth = () => <UniversalDashboard title='Camera Hardware Health & Connectivity' subtitle='National CCTV Command Center' icon={ShieldCheck} />; export default CameraHealth;

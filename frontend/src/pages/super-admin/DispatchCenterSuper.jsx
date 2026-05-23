@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Navigation } from 'lucide-react'; const DispatchCenterSuper = () => <UniversalDashboard title='Dispatch Center' subtitle='National Super Admin Command' icon={Navigation} />; export default DispatchCenterSuper;

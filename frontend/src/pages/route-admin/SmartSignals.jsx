@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Signal } from 'lucide-react'; const SmartSignals = () => <UniversalDashboard title='AI Smart Traffic Signal Control' subtitle='National Route Control Center' icon={Signal} />; export default SmartSignals;

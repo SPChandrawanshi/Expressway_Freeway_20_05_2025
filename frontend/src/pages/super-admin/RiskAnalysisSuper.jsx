@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { AlertOctagon } from 'lucide-react'; const RiskAnalysisSuper = () => <UniversalDashboard title='Risk Analysis' subtitle='National Super Admin Command' icon={AlertOctagon} />; export default RiskAnalysisSuper;

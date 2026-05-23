@@ -1,0 +1,1 @@
+import React from 'react'; import UniversalDashboard from '../common/UniversalDashboard'; import { Fuel } from 'lucide-react'; const FuelLogs = () => <UniversalDashboard title='Patrol Unit Fuel Procurement Logs' subtitle='National Patrol Command Center' icon={Fuel} />; export default FuelLogs;
